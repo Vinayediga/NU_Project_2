@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Student Registration</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Firebase SDKs -->
+    
+    <!-- Your JavaScript -->
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <form id="studentForm">
+        <h2>Student Registration</h2>
+
+        <div class="form-group">
+            <input type="text" id="studentName" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="studentEmail" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-group">
+            <input type="password" id="studentPassword" placeholder="Password" required>
+        </div>
+
+        <div class="form-group">
+            <input type="date" id="studentDOB" placeholder="Date of Birth" required>
+        </div>
+
+        <div class="form-group">
+            <select id="educationLevel" required style="color: black;">
+                <option value="" disabled selected style="color: white;">Current Education Level</option>
+                <option value="highSchool">High School</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="graduate">Graduate</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <select id="fieldOfInterest" required style="color: black;">
+                <option value="" disabled selected style="color: white;">Field of Interest</option>
+                <option value="engineering">Engineering</option>
+                <option value="medicine">Medicine</option>
+                <option value="arts">Arts</option>
+                <!-- Add more fields as needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="studentLocation" placeholder="Country/Location" required>
+        </div>
+
+        <button type="submit" class="btn" id="reg-btn">Register</button>
+
+        <!-- Login link -->
+        <p style="text-align: center; margin-top: 20px;">
+            Already have an account? <a href="std_login.html" style="color: #007BFF;">Login here</a>
+        </p>
+        <p style="text-align: center; margin-top: 10px;">
+            Want to register as a Mentor? <a href="mentor_register.html" style="color: #007BFF;">Sign up here</a>
+        </p>
+    </form>
+    
+</body>
+</html>
