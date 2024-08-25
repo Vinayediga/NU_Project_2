@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Mentor Registration</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Firebase SDKs -->
+    
+    <!-- Your JavaScript -->
+    <script type="module" src="index.js" defer></script>
+</head>
+<body>
+    <form id="mentorForm">
+        <h2>Mentor Registration</h2>
+
+        <div class="form-group">
+            <input type="text" id="mentorName" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="mentorEmail" placeholder="Email Address" required>
+        </div>
+
+        <div class="form-group">
+            <input type="password" id="mentorPassword" placeholder="Password" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="mentorProfession" placeholder="Profession" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="mentorExperience" placeholder="Years of Experience" required>
+        </div>
+
+        <div class="form-group">
+            <select id="fieldOfExpertise" required style="color: black;">
+                <option value="" disabled selected style="color: white;">Field of Expertise</option>
+                <option value="engineering">Engineering</option>
+                <option value="medicine">Medicine</option>
+                <option value="arts">Arts</option>
+                <option value="business">Business</option>
+                <option value="technology">Technology</option>
+                <!-- Add more fields as needed -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <input type="text" id="mentorLocation" placeholder="Country/Location" required>
+        </div>
+
+        <button type="submit" class="btn" id="mentor-reg-btn">Register</button>
+
+        <!-- Login link -->
+        <p style="text-align: center; margin-top: 20px;">
+            Already have an account? <a href="mentor_login.html" style="color: #007BFF;">Login here</a>
+        </p>
+        
+        <!-- Link to student registration -->
+        <p style="text-align: center; margin-top: 10px;">
+            Want to register as a student? <a href="index.html" style="color: #007BFF;">Sign up here</a>
+        </p>
+    </form>
+    
+</body>
+</html>
