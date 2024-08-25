@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form Submission</title>
+</head>
+<body>
+    <form id="studentForm">
+        <h2>Student Registration</h2>
+        <input type="text" id="studentName" placeholder="Full Name" required>
+        <button type="submit" id="reg-btn">Register</button>
+    </form>
+
+    <script type="module">
+        document.getElementById('studentForm').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent the default form submission
+            console.log("Form submission intercepted");
+        });
+    </script>
+</body>
+</html>
