@@ -1,0 +1,149 @@
+/* Glassmorphism effect for navbar */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15); /* Brighter semi-transparent white background */
+    backdrop-filter: blur(12px); /* Stronger blurring effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Brighter semi-transparent border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Glassmorphism effect for container */
+.glassmorphism-container {
+    background: rgba(255, 255, 255, 0.15); /* Brighter semi-transparent white background */
+    backdrop-filter: blur(12px); /* Stronger blurring effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Brighter semi-transparent border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Background gradient for the body */
+body {
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.8), rgba(255, 102, 178, 0.8)); /* Brighter gradient */
+    color: #ffffff; /* Text color */
+    padding-top: 70px; /* Adjust based on the height of the navbar */
+    margin-bottom: 75px; /* Space for profile section */
+}
+
+/* Custom Hamburger Menu */
+.hamburger-menu {
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 20px;
+}
+
+.hamburger-menu .bar {
+    background-color: #ffffff; /* Bar color */
+    height: 3px;
+    width: 100%;
+    margin: 3px 0; /* Space between bars */
+    border-radius: 2px; /* Rounded corners for bars */
+}
+
+/* Hide the hamburger menu on large screens */
+.d-lg-none {
+    display: none;
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 991.98px) {
+    .d-lg-none {
+        display: flex;
+    }
+}
+
+/* NEP Description Styling */
+.nep-container {
+    position: relative;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 20px auto; /* Center horizontally */
+}
+
+.nep-description {
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+    line-height: 1.6; /* Increase line height for readability */
+    color: #ffffff; /* Light text color */
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Larger screen text */
+.nep-large {
+    display: block; /* Display on larger screens */
+}
+
+/* Smaller screen text */
+.nep-small {
+    display: none; /* Hide by default */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nep-large {
+        display: none; /* Hide large text on small screens */
+    }
+    .nep-small {
+        display: block; /* Show small text on small screens */
+        font-size: 1rem; /* Adjust font size for readability */
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .nep-small {
+        font-size: 0.9rem; /* Further reduce font size */
+        padding: 10px; /* Further adjust padding */
+    }
+}
+
+/* Profile Section */
+.profile-welcome, .profile-name {
+    margin: 0;
+    font-size: 0.9rem; /* Font size for welcome message */
+    color: #ffffff; /* White text color */
+}
+
+.profile-name {
+    font-size: 1rem; /* Font size for the name */
+}
+
+/* Bootstrap Card Customization */
+.card-custom {
+    background-color: #f8f9fa; /* Light background color for card */
+    border: 1px solid #e0e0e0; /* Subtle border for card */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1rem; /* Space between cards */
+}
+
+.card-header-custom {
+    background-color: #343a40; /* Dark background for header */
+    color: #ffffff; /* White text color for header */
+    font-weight: bold; /* Bold text */
+}
+
+.card-body-custom {
+    background-color: #ffffff; /* White background for body */
+    color: #000000; /* Dark text color */
+}
+
+/* Responsive Card Adjustments */
+@media (max-width: 768px) {
+    .card-custom {
+        margin-bottom: 0.5rem; /* Reduce margin between cards on smaller screens */
+    }
+}
+.heading-box {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 15px; /* Padding for height control */
+    margin: 20px auto; /* Center the box horizontally */
+    max-width: 800px; /* Limit the width of the box */
+    height: 60px; /* Maximum height of the box */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 24px; /* Font size for the text */
+    font-weight: bold; /* Bold font weight */
+}
