@@ -1,0 +1,62 @@
+/* scholorship.css */
+
+.cards {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  /* Optional: Ensure the text is readable on the glassmorphism background */
+  .cards h2, .cards p {
+    color: #ffffff; /* White text color */
+  }
+  .hamburger-menu {
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 20px;
+}
+.hamburger-menu .bar {
+    background-color: #ffffff; /* Bar color */
+    height: 3px;
+    width: 100%;
+    margin: 3px 0; /* Space between bars */
+    border-radius: 2px; /* Rounded corners for bars */
+}
+.d-lg-none {
+    display: none;
+}
+
+/* Show the hamburger menu on small screens */
+@media (max-width: 991.98px) {
+    .d-lg-none {
+        display: flex;
+    }
+}
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15); /* Brighter semi-transparent white background */
+    backdrop-filter: blur(12px); /* Stronger blurring effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Brighter semi-transparent border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Glassmorphism effect for container */
+.glassmorphism-container {
+    background: rgba(255, 255, 255, 0.15); /* Brighter semi-transparent white background */
+    backdrop-filter: blur(12px); /* Stronger blurring effect */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Brighter semi-transparent border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+}
+.profile-welcome, .profile-name {
+    margin: 0;
+    font-size: 0.9rem; /* Font size for welcome message */
+    color: #ffffff; /* White text color */
+}
+
+.profile-name {
+    font-size: 1rem; /* Font size for the name */
+}
